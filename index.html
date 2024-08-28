@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Logo" id="logo">
+        <h1>Encriptador y Desencriptador de Texto</h1>
+    </header>
+
+    <main>
+        <input type="text" id="textoEntrada" placeholder="Ingresa tu texto aquí">
+        <br>
+        <button onclick="encriptarTexto()">Encriptar</button>
+        <button onclick="desencriptarTexto()">Desencriptar</button>
+        <br>
+        <div class="image-container">
+            <img src="/assets/vacio.png" id="placeholderImg" alt="Placeholder">
+        </div>
+        <div class="output-container">
+            <input type="text" id="textoSalida" placeholder="Texto procesado aquí" readonly>
+        </div>
+        <br>
+        <button onclick="copiarTexto()">Copiar al portapapeles</button>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Yeison Arias Sierra - 2024</p>
+    </footer>
+
+    <script src="/encriptarDesenciptar.js"></script>
+</body>
+</html>
+
